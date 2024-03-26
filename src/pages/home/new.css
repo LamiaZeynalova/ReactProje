@@ -1,0 +1,405 @@
+/* first slider */
+
+.slider {
+    position: relative;
+    width: 100%!important;
+    height: 600px;
+  }
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.dot{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+    font-size: 10px;
+    color: grey;
+    cursor: pointer;
+}
+
+.slide button{
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 50px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.slide button:hover{
+    border: none;
+    background-color: black;
+    color: white;
+}
+.slide h1{
+    color: white;
+    font-size: 55px;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+}
+
+/* information section */
+
+.info{
+    background-color: #F8F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.info-context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 10px 15px 10px;
+    background-color: white;
+    height: 160px; 
+    gap: 5px;
+}
+
+.info-context svg{
+    font-size: 28px;
+}
+.info-context h1{
+    color: gray;
+    font-size: 11px;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Libre Baskerville", serif;
+}
+.info-context p{
+   font-size: 15px;
+    color: #b3b3b3;
+}
+/* ///////////////////////////slide and info section respons///////////////////////////////////////// */
+
+@media (min-width: 996px) {
+   
+    .slide h1 {
+      font-size: 55px;
+    }
+  
+    .slide button {
+      width: 160px;
+      height: 50px;
+    }
+  }
+  
+ 
+  @media (max-width: 995px) {
+    .slide {
+      gap: 25px;
+    }
+  
+    .slide h1 {
+      font-size: 45px; 
+    }
+  
+    .slide button {
+      width: 150px;
+      height: 45px; 
+    }
+  
+    .info {
+      flex-direction: row; 
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .info-context {
+      flex-basis: 45%; 
+      margin: 10px; 
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .slide h1 {
+      font-size: 1.5rem; 
+    }
+  
+    .info-context {
+      flex-basis: 100%; 
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .slide h1 {
+      font-size: 1.2rem; 
+    }
+  
+    .info {
+      flex-direction: column; 
+      align-items: center;
+    }
+  }
+  /* ////////////////////////////////////////////////// */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 80px;
+    margin-bottom: 100px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.card h4{
+    cursor: pointer;
+    color: #000000;
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+
+}
+.card img{
+    width: 320px;
+    cursor: pointer;
+    height: 450px;
+}
+.card img:hover{
+    transform: scale(1.04);
+}
+
+.price{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.price button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0fb78d;
+    color: white;
+    cursor: pointer;
+}
+.price button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.men-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.men{
+    background-image: url("https://preview.colorlib.com/theme/product/images/hero_bg_1.jpg.webp");
+    width: 75%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.men-info{
+    width: 47%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    gap: 8px;
+    background-color: white;
+    font-family: "Libre Baskerville", serif;
+}
+.men-info p{
+    font-family: "Muli", sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    font-size: 14px;
+    color: #333;
+}
+.men-info button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 995px) {
+    .men {
+        height: 700px; 
+        background-size: cover; 
+        background-position: center center; 
+    }
+    .men-info {
+        width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .men {
+        padding: 10px;
+    }
+    .card img{
+        width: 240px;
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+     .card img{
+        width: 180px!important;
+        height: 250px!important;
+    }
+    .card h4{
+        font-size: 12px;
+    }
+    .men {
+        background-position: center center; 
+    }
+    .men-info {
+        width: 95%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .men-info {
+        height: auto; 
+        padding: 20px; 
+    }
+}
+
+/* ///////////////////////////second slider/////////// */
+.slider-item {
+    width: 350px; 
+    height: 480px; 
+    background-size: cover; 
+    background-position: center; 
+  }
+  .slider-info {
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: #000; 
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  
+  
+  .slider-info h5, .slider-info p {
+    margin: 0; 
+  }
+.slider-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.headSlider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    width: 76%;
+    
+    
+}
+.sliderArrow{
+    right: 30px;
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+}
+.sliderArrow svg{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    color: gray;
+    border: 1px solid gray;
+    padding: 5px;
+
+    border-radius: 100%;
+}
+
+.sliderForma{
+    width: 76%;
+    display: flex;
+    gap: 40px;
+}
+.slider-items{
+    transition: 0.7s;
+}
+.dot2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 10px;
+    color: grey;
+    cursor: pointer;
+}
+@media only screen and (min-width: 991px) and (max-width: 1280px) {
+    .sliderForma {
+        display: flex;
+        overflow-x: hidden; 
+        width: 90%; 
+    }
+
+    .slider-items {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .slider-item {
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 991px){
+    .slider-items:last-child{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 777px){
+    .slider-items{
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .slider-items:nth-child(2n){
+        display: none;
+    }
+}
+

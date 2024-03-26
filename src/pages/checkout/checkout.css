@@ -1,0 +1,168 @@
+.cart{
+    height: 230px;
+    background-color: #ededee;
+    position: relative;
+}
+
+.cart div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 10%;
+    text-transform:capitalize;
+    font-family: "Libre Baskerville", serif;
+}
+.cart h1{
+    font-size: 40px;
+}
+.head_text{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    font-size: 22px;
+}
+.head_text a{
+    color: rgb(29, 201, 144);
+    text-decoration: none;
+}
+.item-images{
+  width:250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+}
+th{
+    padding: 12px;
+}
+td{
+   padding: 35px;
+}
+.table{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-right: 30px;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+td button  {
+    width: 22px;
+    height: 22px;
+    font-weight: 700;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.price-item{
+    border: 1px solid black;
+}
+.removeicon svg{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: black;
+    color:white
+}
+
+@media (min-width: 1235px) {
+    .cart{
+        height: 230px;
+    }
+    .item-images{
+        width: 250px;
+    }
+    td{
+       padding: 35px;
+    }
+    .table{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+  }
+  
+  
+  @media (max-width: 1234px) and (min-width: 995px) {
+    .cart{
+        height: 200px;
+    }
+    .item-images{
+        width: 200px;
+    }
+    td{
+       padding: 25px;
+    }
+    .table{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+  }
+  
+ 
+  @media (max-width: 994px) and (min-width: 755px) {
+    .cart{
+        height: 180px;
+    }
+    .item-images{
+        width: 150px;
+    }
+    td{
+       padding: 20px;
+    }
+    .cart div{
+      left: 5%; 
+    }
+    .table{
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+  }
+  
+  
+  @media (max-width: 754px) and (min-width: 445px) {
+    .cart{
+        height: 160px;
+    }
+    .item-images{
+        width: 100px;
+    }
+    td{
+       padding: 15px;
+    }
+    .cart div{
+      bottom: 20px;
+      left: 2%;
+    }
+    .table{
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+  }
+  
+
+  @media (max-width: 444px) {
+    .cart{
+        height: 140px;
+    }
+    .item-images{
+        width: 80px;
+    }
+    td{
+       padding: 10px;
+    }
+    .table, .head_text {
+      display: block; 
+    }
+    .cart div{
+      bottom: 10px;
+      left: 1%;
+    }
+    .table{
+        margin-right: 1px;
+        margin-left: 1px;
+    }
+  }
