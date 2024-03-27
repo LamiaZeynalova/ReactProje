@@ -57,7 +57,16 @@ const AdminPanel = () => {
       
         return (
           <div>
+            <div className='cart' style={{marginBottom:"40px"}}>
+        <div>
             <h1>Admin Panel</h1>
+            <p className='head_text'>
+                <a href='./'>Home</a>
+                /
+                <strong>Panel</strong>
+                </p>
+        </div>
+    </div>
             <form onSubmit={handleSubmit} className='form'>
               <input
                 type="text"

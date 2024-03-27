@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <>
         <nav>
-            <h2>Product<span className='end'>.</span></h2>
+            <h3>P R O D U C T<span className='end'>.</span></h3>
             <ul className='NavLinks'>
             <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : undefined}>NEW</NavLink></li>
             <li onMouseEnter={() => setDropdownOpen(true)}
@@ -62,7 +62,8 @@ const Navbar = () => {
             </ul>
             <div className='icons'>
              <FaSearch />
-             <FaRegUser />
+             <NavLink to="/adminpanel" style={{color :"black"}}><FaRegUser /></NavLink>
+             
             <div className="cartIcon">
              <FaShoppingCart style={{cursor:"pointer"}} onClick={()=>setCartOpen(true)}></FaShoppingCart>
             <span>{cart ? cart.length : 0}</span>
